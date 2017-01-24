@@ -14,7 +14,7 @@
                     <div class="logo">
                         <a href="#" class="logo">Техномарт</a>
                     </div>
-                    <form class="search">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="search">
                         <input type="search" name="search" id="search" placeholder="Поиск:">
                     </form>
                     <a href="#" class="bookmark">Закладки: 0</a>
@@ -58,119 +58,126 @@
     <main class="main">
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Инструмент</a></li>
-                <li><a href="">Перфораторы</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="#">Перфораторы</a></li>
             </ul>
             <h1 class="catalog-title">Перфораторы</h1>
             <div class="catalog">
                 <aside class="filter">
-                    <form>
+                    <form action="https://echo.htmlacademy.ru" method="post">
                         <span>Фильтр:</span>
-                        <h3 class="filter-title">Цена:</h3>
-
-                        <div class="filter-price_selection">
-                            <div class="filter-scale"></div>
-                            <div class="filter-min"></div>
-                            <div class="filter-max"></div>
-                            <div class="filter-price">
-                                <input class="filter-price-min" type="text" value="0">
-                                <span>&#8211;</span>
-                                <input class="filter-price-max" type="text" value="30000">
+                        <div class="filter-price">
+                            <h3 class="filter-title">Цена:</h3>
+                            <div class="filter-price_selection">
+                                <div class="filter-scale"></div>
+                                <div class="filter-min"></div>
+                                <div class="filter-max"></div>
+                                <div class="filter-price_input">
+                                    <input class="filter-price-min" type="text" value="0">
+                                    <span>&#8211;</span>
+                                    <input class="filter-price-max" type="text" value="30000">
+                                </div>
                             </div>
                         </div>
-                        <h3 class="filter-title">Производители:</h3>
-                        <input type="checkbox" name="bosch" value="bosch" id="bosh" checked>
-                        <label for="bosch">Bosch</label>
-                        <input type="checkbox" name="intersckol" value="intersckol" id="intersckol">
-                        <label for="intersckol">Интерскол</label>
-                        <input type="checkbox" name="makita" value="makita" id="makita" checked>
-                        <label for="makita">Makita</label>
-                        <input type="checkbox" name="dewalt" value="dewalt" id="dewalt">
-                        <label for="dewalt">Dewalt</label>
-                        <input type="checkbox" name="hitachi" value="hitachi" id="hitachi">
-                        <label for="hitachi">Hitachi</label>
-                        <h3 class="filter-title">Питание:</h3>
-                        <input type="radio" name="charge" value="battery" id="battery">
-                        <label for="battery">Аккумуляторные</label>
-                        <input type="radio" name="charge" value="net" id="net">
-                        <label for="net">Сетевые</label>
+                        <div class="filter-manufacturers">
+                            <h3 class="filter-title">Производители:</h3>
+                            <input type="checkbox" name="bosch" value="bosch" id="bosch" checked>
+                            <label for="bosch">Bosch</label>
+                            <input type="checkbox" name="intersckol" value="intersckol" id="intersckol">
+                            <label for="intersckol">Интерскол</label>
+                            <input type="checkbox" name="makita" value="makita" id="makita" checked>
+                            <label for="makita">Makita</label>
+                            <input type="checkbox" name="dewalt" value="dewalt" id="dewalt">
+                            <label for="dewalt">Dewalt</label>
+                            <input type="checkbox" name="hitachi" value="hitachi" id="hitachi">
+                            <label for="hitachi">Hitachi</label>
+                        </div>
+                        <div class="filter-charge">
+                            <h3 class="filter-title">Питание:</h3>
+                            <input type="radio" name="charge" value="battery" id="battery">
+                            <label for="battery">Аккумуляторные</label>
+                            <input type="radio" name="charge" value="net" id="net">
+                            <label for="net">Сетевые</label>
+                        </div>
                         <button type="submit" class="filter-btn">Показать</button>
                     </form>
                 </aside>
                 <section class="catalog-goods">
-                    <div class="catalog-sorting">
-                        <a href="#" class="sorting-option-active">По цене</a>
-                        <a href="#" class="sorting-option">По типу</a>
-                        <a href="#" class="sorting-option">По функционалу</a>
-                        <a class="arrow-up arrow-up-active" href="#"></a>
-                        <a class="arrow-down" href="#"></a>
-                    </div>
+                    <ul class="catalog-sorting">
+                        <li><a href="#" class="sorting-option-active">По цене</a></li>
+                        <li><a href="#" class="sorting-option">По типу</a></li>
+                        <li><a href="#" class="sorting-option">По функционалу</a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="arrow-up arrow-up-active" href="#"></a></li>
+                        <li><a class="arrow-down" href="#"></a></li>
+                    </ul>
                     <div class="goods">
-                        <artical class="goods-item">
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 3000</span>
                             <span class="popular-item-old_price">22 500 Р.</span>
                             <span class="popular-item-price">15 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 6000</span>
                             <span class="popular-item-old_price">30 500 Р.</span>
                             <span class="popular-item-price">25 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <a href="#" class="goods-item-buy">Купить</a>
                             <a href="#" class="goods-item-bookmark">В закладки</a>
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 2000</span>
                             <span class="popular-item-old_price"></span>
                             <span class="popular-item-price">12 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 3000</span>
                             <span class="popular-item-old_price">30 500 Р.</span>
                             <span class="popular-item-price">25 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 6000</span>
                             <span class="popular-item-old_price">22 500 Р.</span>
                             <span class="popular-item-price">15 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 2000</span>
                             <span class="popular-item-old_price"></span>
                             <span class="popular-item-price">12 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 3000</span>
                             <span class="popular-item-old_price">22 500 Р.</span>
                             <span class="popular-item-price">15 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 6000</span>
                             <span class="popular-item-old_price">30 500 Р.</span>
                             <span class="popular-item-price">25 500 Р.</span>
-                        </artical>
-                        <artical class="goods-item">
+                        </article>
+                        <article class="goods-item">
                             <img src="http://placehold.it/180x160" width="180" height="160" alt="">
-                            <h1 class="popular-item-name">Перфоратор Bosch</h1>
+                            <h2 class="popular-item-name">Перфоратор Bosch</h2>
                             <span class="popular-item-model">BFG 2000</span>
                             <span class="popular-item-old_price"></span>
                             <span class="popular-item-price">12 500 Р.</span>
-                        </artical>
+                        </article>
                     </div>
                     <div class="goods-paginator">
                         <a href="#" class="goods-paginator-active">1</a>
@@ -238,7 +245,7 @@
                 <div class="footer-down">
                     <div class="footer-down-copyright">
                         <span>&#169; 2010-2017 Компания «Техномарт»</span>
-                        <p>Все права защищены</p>
+                        <span>Все права защищены</span>
                     </div>
                     <div class="footer-down-social">
                         <a href="#" class="footer-social-btn footer-social-vk"></a>
