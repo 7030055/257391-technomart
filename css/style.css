@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     font-size: 12px;
     line-height: normal;
     color: black;
@@ -6,18 +7,81 @@ body {
     font-family: "Cuprum", sans-serif, Arial;
 }
 
-h1 {
-    font-size: 14px;
-    line-height: normal;
-    color: blue;
-    font-weight: 400;
-    font-family: "Cuprum", sans-serif, Arial;
+* {
+    box-sizing: border-box;
 }
 
-h2 {
-    font-size: 13px;
-    line-height: normal;
-    color: darkgreen;
-    font-weight: 200;
-    font-family: "Cuprum", sans-serif, Arial;
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.header-up {
+    vertical-align: baseline;
+    background-color: #293449;
+}
+
+.logo {
+    width: 220px;
+    padding: 12px 53px 12px 53px;
+    float: left;
+    background-color: yellow;
+}
+
+form.search {
+    display: block;
+    width: 260px;
+    padding: 10px 0 10px 50px;
+    float: left;
+    background-color: antiquewhite;
+}
+
+.bookmark {
+    display: block;
+    width: 160px;
+    padding: 12px 0 12px 53px;
+    float: left;
+    background-color: cadetblue;
+}
+
+.cart {
+    display: block;
+    width: 150px;
+    padding: 12px 0 12px 50px;
+    float: left;
+    background-color: fuchsia;
+}
+
+.order {
+    display: block;
+    width: 150px;
+    padding: 12px 0 12px 20px;
+    float: right;
+    background-color: cornflowerblue;
+}
+
+.header-middle {
+    background-color: #f1f5f7;
+}
+
+.about {
+    width: 240px;
+    float: left;
+}
+
+.contacts {
+    width: 270px;
+    float: left;
+}
+
+.user_form {
+    width: 300px;
+    float: left;
 }
