@@ -129,6 +129,160 @@ form.search {
     padding: 14px 31px;
 }
 
+.breadcrumbs li {
+    display: inline-block;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    background-color: darkgoldenrod;
+}
+
+.catalog-title {
+    display: block;
+    float: left;
+    width: 940px;
+    padding: 30px 0 30px 20px;
+    background-color: #f2f6f8;
+}
+
+.catalog {
+    padding-top: 20px;
+}
+
+.filter {
+    width: 220px;
+    float: left;
+    background-color: crimson;
+}
+
+.filter-sorting {
+    display: block;
+    width: 220px;
+    padding: 10px 0 10px 20px;
+    background-color: #f7f3ec;
+}
+
+.filter-title {
+    display: block;
+    padding: 15px 0 15px 0;
+}
+
+.filter-price_selection {
+    margin-bottom: 25px;
+}
+
+.filter-scale {
+    display: block;
+    width: 220px;
+    min-height: 80px;
+    margin-bottom: 10px;
+    background-color: #f7f3ec;
+}
+
+.filter-price-min {
+    display: block;
+    float: left;
+    width: 95px;
+    min-height: 40px;
+    background-color: #f7f3ec;
+}
+
+.filter-price-max {
+    display: block;
+    float: right;
+    width: 95px;
+    min-height: 40px;
+    background-color: #f7f3ec;
+}
+
+.filter-manufacturers {
+    border-top: 1px solid #e5e5e5;
+}
+
+.filter-manufacturers input {
+    display: block;
+    padding: 0 0 25px 35px;
+}
+
+.filter-charge {
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 75px;
+}
+
+.filter-charge input {
+    display: block;
+    padding: 0 0 25px 35px;
+}
+
+.filter button {
+    display: block;
+    padding: 15px 40px 15px 40px;
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-sorting-filter {
+    display: block;
+    width: 700px;
+    padding: 10px 0 10px 20px;
+    background-color: #f7f3ec;
+}
+
+.catalog-sorting-filter span {
+    display: block;
+    float: left;
+    width: 140px;
+    padding: 10px 20px 10px 15px;
+}
+
+.catalog-sorting-filter li {
+    display: inline-block;
+    float: left;
+    width: 120px;
+}
+
+.catalog-goods {
+    width: 700px;
+    float: right;
+    background-color: darkblue;
+}
+
+.goods-item {
+    float: left;
+    width: 218px;
+    margin-right: 20px;
+    margin-top: 20px;
+    min-height: 318px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+}
+
+.goods-item:nth-child(3n) {
+    float: right;
+    margin-right: 0px;
+}
+
+.goods-paginator {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+.goods-paginator a {
+    display: inline-block;
+    width: 40px;
+    min-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: azure;
+}
+
+.seo-text {
+    background-color: #f2f6f8;
+    padding: 70px 0 70px 0;
+}
+
+.seo-text-title {
+    padding-bottom: 20px;
+}
+
 .offer {
     margin-top: 60px;
     margin-bottom: 30px;
@@ -295,9 +449,88 @@ form.search {
 .company-about {
     float: left;
     width: 540px;
+    background-color: blueviolet;
 }
 
 .company-contact {
     float: right;
     width: 300px;
+    background-color: aqua;
+}
+
+.footer-up {
+    background-color: #32425c;
+}
+
+.footer-logo {
+    display: block;
+    float: left;
+    width: 220px;
+    min-height: 65px;
+    background-color: azure;
+}
+
+.footer-company-menu {
+    display: block;
+    float: right;
+    width: 560px;
+    background-color: fuchsia;
+}
+
+.footer-company-menu li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 25px;
+}
+
+.footer-middle {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer-middle-address {
+    float: left;
+    width: 310px;
+    background-color: chartreuse;
+}
+
+.footer-shop-menu {
+    display: block;
+    float: right;
+    width: 550px;
+}
+
+.footer-shop-menu li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 25px;
+}
+
+.footer-down {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #293449;
+}
+
+.footer-down-copyright {
+    float: left;
+    width: 240px;
+    background-color: cornflowerblue;
+}
+
+.footer-down-social {
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.footer-down-feedback {
+    float: right;
+    width: 170px;
+    background-color: cadetblue;
+}
+
+.footer-down-design {
+    float: right;
+    width: 150px;
+    background-color: aquamarine;
 }

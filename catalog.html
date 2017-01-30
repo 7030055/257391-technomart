@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Перфораторы</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-up">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo">
-                    <a href="index.html" class="logo">Техномарт</a>
+                    <a href="index.html" class="header-logo">Техномарт</a>
                 </div>
                 <form action="https://echo.htmlacademy.ru" method="post" class="search">
                     <input type="search" name="search" id="search" placeholder="Поиск:">
@@ -22,7 +24,7 @@
             </div>
         </div>
         <div class="header-middle">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="about">
                     <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 </div>
@@ -37,6 +39,8 @@
                         <a href="#" class="user_form-menu-item">Личный кабинет</a>
                     </div>
                 </div>
+            </div>
+            <div class="container">
                 <nav class="header-down">
                     <ul class="menu">
                         <li class="menu-item"><a href="index.html">Главная</a></li>
@@ -53,23 +57,23 @@
     </header>
     <main class="main">
         <div class="container">
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs clearfix">
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Инструмент</a></li>
                 <li><a href="#">Перфораторы</a></li>
             </ul>
             <h1 class="catalog-title">Перфораторы</h1>
-            <div class="catalog">
+            <div class="catalog clearfix">
                 <aside class="filter">
                     <form action="https://echo.htmlacademy.ru" method="post">
-                        <span>Фильтр:</span>
+                        <span class="filter-sorting">Фильтр:</span>
                         <div class="filter-price">
                             <h3 class="filter-title">Цена:</h3>
                             <div class="filter-price_selection">
                                 <div class="filter-scale"></div>
                                 <div class="filter-min"></div>
                                 <div class="filter-max"></div>
-                                <div class="filter-price_input">
+                                <div class="filter-price_input clearfix">
                                     <input class="filter-price-min" type="text" value="0">
                                     <span>&#8211;</span>
                                     <input class="filter-price-max" type="text" value="30000">
@@ -100,20 +104,23 @@
                     </form>
                 </aside>
                 <section class="catalog-goods">
-                    <ul class="catalog-sorting">
-                        <li><a href="#" class="sorting-option-active">По цене</a></li>
-                        <li><a href="#" class="sorting-option">По типу</a></li>
-                        <li><a href="#" class="sorting-option">По функционалу</a></li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a class="arrow-up arrow-up-active" href="#"></a>
-                        </li>
-                        <li>
-                            <a class="arrow-down" href="#"></a>
-                        </li>
-                    </ul>
-                    <div class="goods">
+                    <div class="catalog-sorting-filter clearfix">
+                        <span>Сортировка:</span>
+                        <ul class="catalog-sorting">
+                            <li><a href="#" class="sorting-option-active">По цене</a></li>
+                            <li><a href="#" class="sorting-option">По типу</a></li>
+                            <li><a href="#" class="sorting-option">По функционалу</a></li>
+                        </ul>
+                        <ul class="catalog-sorting-arrows">
+                            <li>
+                                <a class="arrow-up arrow-up-active" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="arrow-down" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="goods clearfix">
                         <article class="goods-item">
                             <img src="img/bfg-3000.jpg" width="180" height="160" alt="Перфоратор Bosch BFG 3000">
                             <h1 class="popular-item-name"><a href="#">Перфоратор Bosch BFG 3000</a></h1>
@@ -188,7 +195,7 @@
     </main>
     <footer class="footer">
         <div class="footer-up">
-            <div class="container">
+            <div class="container clearfix">
                 <a href="#" class="footer-logo">Техномарт</a>
                 <ul class="footer-company-menu">
                     <li>
@@ -207,7 +214,9 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-                <div class="footer-middle">
+            </div>
+            <div class="container">
+                <div class="footer-middle clearfix">
                     <div class="footer-middle-address">
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         <span>+7 (812) 555-05-55</span>
@@ -252,4 +261,5 @@
         </div>
     </footer>
 </body>
+
 </html>
