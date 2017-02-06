@@ -20,51 +20,71 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
-    background-color: green;
 }
 
 .header-up {
-    vertical-align: baseline;
+    vertical-align: top;
     background-color: #293449;
 }
 
 .logo {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 100;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
     width: 220px;
     padding: 12px 53px 12px 53px;
     float: left;
-    background-color: yellow;
+    background-color: #ee3643;
+    box-shadow: #ca2c37 0px 5px 0px 0px;
 }
 
 form.search {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 100;
+    color: #000000;
     display: block;
     width: 260px;
     padding: 9px 0 10px 50px;
     float: left;
-    background-color: antiquewhite;
+}
+
+.bookmark,
+.cart,
+.order {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .bookmark {
     display: block;
     width: 160px;
-    padding: 12px 0 12px 53px;
+    padding: 15px 0 12px 53px;
     float: left;
-    background-color: cadetblue;
 }
 
 .cart {
     display: block;
     width: 150px;
-    padding: 12px 0 12px 50px;
+    padding: 15px 0 12px 50px;
     float: left;
-    background-color: fuchsia;
 }
 
 .order {
     display: block;
     width: 150px;
-    padding: 12px 0 12px 20px;
+    padding: 15px 0 16px 30px;
     float: right;
-    background-color: cornflowerblue;
+    background-color: #63a63e;
 }
 
 .header-middle {
@@ -73,17 +93,32 @@ form.search {
 }
 
 .about {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ee3643;
+    font-style: italic;
     width: 310px;
-    padding: 46px 50px 13px 50px;
+    padding: 26px 50px 13px 50px;
     float: left;
-    background-color: chartreuse;
 }
 
 .contacts {
     width: 320px;
     padding: 46px 40px 45px 10px;
     float: left;
-    background-color: chocolate;
+}
+
+.contacts-telephone,
+.user_form-login,
+.user_form-registration {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
+    text-align: center;
 }
 
 .contacts-telephone {
@@ -91,11 +126,18 @@ form.search {
     border: 3px solid white;
 }
 
+.contacts-address {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #32425c;
+}
+
 .user_form {
     width: 310px;
     padding: 46px 0 20px 30px;
     float: right;
-    background-color: darkslateblue;
 }
 
 .user_form-login {
@@ -126,7 +168,24 @@ form.search {
 .header-down li {
     display: inline-block;
     vertical-align: top;
-    padding: 14px 31px;
+    padding: 15px 28px 20px 28px;
+}
+
+.header-down a {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-down li:hover {
+    background-color: #293449;
+}
+
+.menu {
+    margin-bottom: 0px;
 }
 
 .breadcrumbs li {
@@ -288,13 +347,13 @@ form.search {
     margin-bottom: 30px;
 }
 
-.offer .offer-item {
+.offer-item {
     display: inline-block;
     float: left;
     position: relative;
     width: 300px;
     min-height: 125px;
-    padding: 23px 0 0 23px;
+    padding: 0 0 0 23px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: dodgerblue;
@@ -311,16 +370,107 @@ form.search {
 }
 
 .offer-item-type {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
 
 .offer-item-info {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
     display: block;
     text-align: center;
     width: 135px;
     padding: 10px 0 10px 0;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
+}
+
+.offer-item-info:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.offer-item-info:active {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.offer-material {
+    background-color: #f6b22d;
+}
+
+.offer-material:after {
+    position: absolute;
+    top: 31px;
+    left: 213px;
+    width: 45px;
+    height: 65px;
+    background: #ffffff no-repeat;
+    content: "";
+}
+
+.offer-tool {
+    background-color: #4aafde;
+}
+
+.offer-tool:after {
+    position: absolute;
+    top: 31px;
+    left: 198px;
+    width: 76px;
+    height: 65px;
+    background: #ffffff no-repeat;
+    content: "";
+}
+
+.offer-equipment {
+    background-color: #85d179;
+}
+
+.offer-equipment:after {
+    position: absolute;
+    top: 31px;
+    left: 190px;
+    width: 80px;
+    height: 65px;
+    background: #ffffff no-repeat;
+    content: "";
+}
+
+.offer-discounts {
+    background-color: #cc79d1;
+}
+
+.offer-discounts:after {
+    position: absolute;
+    top: 31px;
+    left: 195px;
+    width: 60px;
+    height: 75px;
+    background: #ffffff no-repeat;
+    content: "";
+}
+
+.offer-delivery {
+    background-color: #f6b22d;
+}
+
+.offer-delivery:after {
+    position: absolute;
+    top: 31px;
+    left: 190px;
+    width: 80px;
+    height: 65px;
+    background: #ffffff no-repeat;
+    content: "";
 }
 
 .offer-slider-block {
@@ -347,7 +497,7 @@ form.search {
     background-color: #f7f3ec;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 30px 20px 35px 30px;
+    padding: 28px 20px 25px 30px;
 }
 
 .popular-title {
@@ -359,6 +509,14 @@ form.search {
 .popular-btn {
     display: block;
     float: right;
+    width: 250px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-right: 24px;
+    background-color: #ee3643;
+    border-radius: 5px;
 }
 
 .popular-products {
@@ -533,4 +691,8 @@ form.search {
     float: right;
     width: 150px;
     background-color: aquamarine;
+}
+
+.menu {
+    
 }
