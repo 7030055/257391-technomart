@@ -29,14 +29,14 @@ body {
 
 .logo {
     font-family: "Cuprum", sans-serif, Arial;
-    font-size: 21px;
-    line-height: 1;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 100;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     width: 220px;
-    padding: 12px 53px 12px 53px;
+    padding: 8px 50px 8px 50px;
     float: left;
     background-color: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
@@ -44,45 +44,64 @@ body {
 
 form.search {
     font-family: "Cuprum", sans-serif, Arial;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
-    font-weight: 100;
+    font-weight: 400;
     color: #000000;
     display: block;
     width: 260px;
-    padding: 9px 0 10px 50px;
     float: left;
+}
+
+form.search input {
+    box-sizing: border-box;
+    width: 270px;
+    height: 42px;
+    padding-top: 12px 0 12px 25px;
+    outline: 0;
+    border: none;
+    background-color: #293449;
+    outline: none;
+    border: none;
+}
+
+input[type="search"]:hover ~ label::before {
+    color: #ffffff;
+}
+
+input[type="search"]:focus ~ label::before,
+input[type="search"]:active ~ label::before {
+    color: #ee3643;
+}
+
+form.search input:focus {
+    background-color: #ffffff;
 }
 
 .bookmark,
 .cart,
 .order {
     font-family: "Cuprum", sans-serif, Arial;
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 17px;
+    line-height: 18px;
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
 }
 
-.bookmark {
-    display: block;
-    width: 160px;
-    padding: 15px 0 12px 53px;
-    float: left;
-}
-
+.bookmark,
 .cart {
     display: block;
+    position: relative;
     width: 150px;
-    padding: 15px 0 12px 50px;
+    padding: 12px 0 12px 44px;
     float: left;
 }
 
 .order {
     display: block;
     width: 150px;
-    padding: 15px 0 16px 30px;
+    padding: 12px 0 12px 20px;
     float: right;
     background-color: #63a63e;
 }
@@ -94,7 +113,7 @@ form.search {
 
 .about {
     font-family: "Cuprum", sans-serif, Arial;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 23px;
     font-weight: 400;
     color: #ee3643;
@@ -123,7 +142,8 @@ form.search {
 
 .contacts-telephone {
     display: block;
-    border: 3px solid white;
+    padding: 9px 42px 9px 70px;
+    border: 3px solid #ffffff;
 }
 
 .contacts-address {
@@ -132,6 +152,7 @@ form.search {
     line-height: 24px;
     font-weight: 400;
     color: #32425c;
+    text-align: center;
 }
 
 .user_form {
@@ -141,21 +162,32 @@ form.search {
 }
 
 .user_form-login {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
     display: block;
     float: left;
     width: auto;
-    padding: 15px 25px 30px 25px;
-    background-color: white;
+    padding: 14px 27px 15px 40px;
+    background-color: #ffffff;
 }
 
 .user_form-registration {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
     display: block;
     float: left;
     width: auto;
     margin: 0 0 0 10px;
-    padding: 15px 25px 30px 25px;
-    margin: 0 0 0 10px;
-    background-color: white;
+    padding: 14px 25px 15px 25px;
+    background-color: #ffffff;
 }
 
 .header-down {
@@ -353,10 +385,11 @@ form.search {
     position: relative;
     width: 300px;
     min-height: 125px;
-    padding: 0 0 0 23px;
+    padding: 0px 0 20px 23px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: dodgerblue;
+    overflow: hidden;
 }
 
 .offer .offer-item:nth-child(3n) {
@@ -371,7 +404,7 @@ form.search {
 
 .offer-item-type {
     font-family: "Cuprum", sans-serif, Arial;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
@@ -409,7 +442,7 @@ form.search {
 
 .offer-material:after {
     position: absolute;
-    top: 31px;
+    top: 30px;
     left: 213px;
     width: 45px;
     height: 65px;
@@ -497,26 +530,47 @@ form.search {
     background-color: #f7f3ec;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 28px 20px 25px 30px;
+    padding: 30px 25px 60px 30px;
 }
 
 .popular-title {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
     display: block;
     float: left;
     margin: 0;
+    width: 380px;
 }
 
 .popular-btn {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     display: block;
     float: right;
     width: 250px;
-    display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
     margin-right: 24px;
     background-color: #ee3643;
     border-radius: 5px;
+}
+
+.popular-btn:hover {
+    background-color: #ca2c37;
+}
+
+.popular-btn:active {
+    background-color: #ba2732;
 }
 
 .popular-products {
@@ -530,6 +584,41 @@ form.search {
     min-height: 318px;
     border: 2px solid #e5e5e5;
     text-align: center;
+}
+
+.popular-item-name {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.popular-item-old_price {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #999999;
+    text-decoration: line-through;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.popular-item-price {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 37px;
+    width: 122px;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+    background-color: #ee3643;
 }
 
 .popular-item:last-child {
