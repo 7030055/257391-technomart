@@ -52,6 +52,16 @@ body {
     box-shadow: #8e1e26 0px 5px 0px 0px;
 }
 
+.logo a {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 form.search {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 17px;
@@ -233,9 +243,15 @@ form.search input:focus {
     padding-left: 9px;
 }
 
-.user_form {
+.catalog-user_form {
     width: 300px;
     padding: 46px 0 15px 2px;
+    float: right;
+}
+
+.index-user_form {
+    width: 300px;
+    padding: 46px 0 15px 19px;
     float: right;
 }
 
@@ -420,14 +436,20 @@ form.search input:focus {
     position: relative;
     display: inline-block;
     float: left;
-    padding: 21px 23px 20px 14px;
-    ;
+    padding: 21px 23px 20px 16px;
+}
+
+.breadcrumbs li:last-child {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 21px 23px 20px 20px;
 }
 
 .breadcrumbs li:before {
     position: absolute;
     top: 23px;
-    left: -7px;
+    left: -8px;
     width: 8px;
     height: 12px;
     background: -608px -5px url("../img/icons/sprite.png") no-repeat;
@@ -584,7 +606,7 @@ input[type="checkbox"]:disabled+label::before {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-bottom: 13px;
 }
 
@@ -654,7 +676,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .filter-charge {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 }
 
 .filter-charge input {
@@ -673,7 +695,7 @@ input[type="checkbox"]:disabled+label::before {
     background-color: #ffffff;
     cursor: pointer;
     display: block;
-    padding: 15px 40px 10px 45px;
+    padding: 11px 40px 7px 45px;
     border: 1px solid #e5e5e5;
 }
 
@@ -686,27 +708,18 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .catalog-sorting {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 110px;
-}
-
-.catalog-sorting-arrows {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: relative;
-    padding-left: 0px;
-}
-
-.catalog-sorting-arrows li {
-    position: relative;
+	position: relative;
+    float: right;
+    width: 480px;
 }
 
 .catalog-sorting-filter {
     display: block;
-    width: 700px;
-    padding: 10px 0 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 19px;
     background-color: #f7f3ec;
+    border-radius: 3px;
 }
 
 .catalog-sorting-filter span {
@@ -719,8 +732,8 @@ input[type="checkbox"]:disabled+label::before {
     text-transform: uppercase;
     display: block;
     float: left;
-    width: 140px;
-    padding: 0px 20px 0px 0px;
+    width: 100px;
+    padding-left: 20px;
 }
 
 .catalog-sorting-filter li {
@@ -761,37 +774,70 @@ input[type="checkbox"]:disabled+label::before {
     content: "";
 }
 
-.sorting-option-active,
-.sorting-option-active:hover {
-    color: #ee3643;
-    border-bottom: none;
-}
-
-.sorting-option-active:before {
-    color: #ee3643;
-}
-
 .sorting-option {
-    color: #c4c1bb;
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #c9c9c9;
     border-bottom-style: dotted;
     border-bottom-color: #ee3643;
     border-bottom-width: thin;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.sorting-option:hover {
-    color: #000000;
+.sorting-option:hover  {
+	color: #000000;
     border-bottom-style: solid;
-    border-bottom-color: #ee3643;
-    border-bottom-width: thin;
 }
 
-.sorting-option:active {
+.sorting-option:active  {
     color: #ee3643;
     border-bottom-style: none;
 }
 
+.catalog-sorting a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sorting-option-price {
+    margin-right: 70px;
+	margin-left: 20px;
+}
+
+.sorting-option-type {
+    margin-right: 65px;
+	margin-left: -3px;
+    margin-top: -2px;
+}
+
+.sorting-option-function {
+    margin-left: 45px;
+	margin-left: -3px;
+    margin-top: -2px;
+}
+
+.arrow-up {
+    position: relative;
+    margin-left: -66px;
+    margin-top: -2px;
+}
+
+.arrow-down {
+    position: relative;
+    margin-right: 15px;
+    margin-top: -2px;
+}
+
+.sorting-option-active {
+    color: #ee3643;
+}
+
 .goods {
     position: relative;
+	margin-top: -20px;
 }
 
 .catalog-goods {
@@ -906,19 +952,33 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .goods-paginator {
-    margin-top: 51px;
-    margin-bottom: 52px;
+    font-size: 0;
+    margin-bottom: 60px;
+	margin-top: 50px;
 }
 
-.goods-paginator a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 8px 19px 15px 15px;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5;
-    text-decoration: none;
+.goods-paginator a,
+.goods-paginator span {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
     color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 9.5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 14px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+	
+}
+
+.goods-paginator span {
+    color: #ffffff;
 }
 
 .goods-paginator a:hover {
@@ -929,20 +989,20 @@ input[type="checkbox"]:disabled+label::before {
     border-color: #ee3643;
 }
 
-.goods-paginator-next {
+.goods-paginator .goods-paginator-next {
     padding-left: 31px;
     padding-right: 31px;
-    text-transform: uppercase;
 }
 
-.goods-paginator-active {
+.goods-paginator .goods-paginator-active {
+    padding-right: 14px;
     border: 1px solid #ee3643;
     background-color: #ee3643;
 }
 
 .seo-text {
     background-color: #f2f6f8;
-    padding: 48px 1px 35px 0;
+    padding: 40px 1px 35px 0;
 }
 
 .seo-text p {
@@ -976,7 +1036,7 @@ input[type="checkbox"]:disabled+label::before {
     text-align: center;
     font-size: 17px;
     line-height: 25px;
-    top: 10px;
+    top: 5px;
     right: -30px;
     color: white;
     content: "new";
@@ -1283,7 +1343,7 @@ p.popular-item-name {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 9px;
-    padding-left: 2px;
+    padding-left: 3px;
 }
 
 .popular-item-price {
@@ -1295,8 +1355,8 @@ p.popular-item-name {
     text-align: center;
     position: relative;
     width: 122px;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 9px;
+    padding-left: 14px;
     padding-bottom: 10px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1323,11 +1383,6 @@ p.popular-item-name {
     margin-right: 0px;
 }
 
-.popular-item img,
-.goods-item img {
-    padding: 20px;
-}
-
 .popular-brand {
     margin-bottom: 65px;
 }
@@ -1336,10 +1391,9 @@ p.popular-item-name {
     display: block;
     float: left;
     width: 220px;
-    min-height: 145px;
+    min-height: 143px;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding-top: 35px;
     vertical-align: top;
     border: 1px solid #e5e5e5;
     text-align: center;
@@ -1524,7 +1578,7 @@ p.popular-item-name {
 
 .company {
     padding-top: 54px;
-    padding-bottom: 85px;
+    padding-bottom: 84px;
 }
 
 .company-about {
@@ -1700,21 +1754,17 @@ p.popular-item-name {
 }
 
 .footer-company-menu {
-    display: block;
     float: right;
-    width: 700px;
-    padding-left: 137px;
-    padding-top: 12px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    padding-top: 39px;
 }
 
 .footer-company-menu li {
-    text-align: right;
     display: inline-block;
-    ;
     vertical-align: top;
-    padding: 26px 23px;
+    width: 121px;
+    text-align: right;
+    margin-top: -14px;
+	padding-left: 60px;
 }
 
 .footer-company-menu a {
@@ -1756,8 +1806,8 @@ p.popular-item-name {
 
 .footer-middle-address p {
     margin-bottom: 0px;
-    margin-top: 8px;
-    margin-left: 3px;
+    margin-top: 19px;
+    margin-left: 4px;
 }
 
 .footer-middle-address span {
@@ -1768,7 +1818,7 @@ p.popular-item-name {
     display: block;
     float: right;
     width: 600px;
-    margin-top: 8px;
+    margin-top: 19px;
 }
 
 .footer-shop-menu li {
@@ -1776,7 +1826,8 @@ p.popular-item-name {
     vertical-align: top;
     width: 130px;
     text-align: center;
-    padding-left: 19px;
+    padding-left: 34px;
+    padding-right: 22px;
 }
 
 .footer-shop-menu a {
@@ -1799,7 +1850,7 @@ p.popular-item-name {
 
 .footer-down {
     padding-top: 35px;
-    padding-bottom: 65px;
+    padding-bottom: 72px;
     background-color: #293449;
 }
 
@@ -1897,12 +1948,15 @@ p.popular-item-name {
     float: left;
     width: 140px;
     margin-right: 40px;
+    margin-left: 1px;
+    margin-top: 2px;
 }
 
 .footer-down-design {
     float: right;
     width: 110px;
     margin-right: 0px;
+	margin-top: 2px;
 }
 
 .map {
