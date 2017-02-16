@@ -514,6 +514,13 @@ form.search input:focus {
 .header-down li:hover {
     background-color: #293449;
 }
+.header-down li:active {
+    color: #777d88;
+    background-color: #1d2739;
+}
+.header-down a:active {
+    color: #777d88;
+}
 .menu {
     padding-left: 21px;
     padding-top: 2px;
