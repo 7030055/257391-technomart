@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -75,12 +75,17 @@
                         <div class="filter-price">
                             <h3 class="filter-title">Цена:</h3>
                             <div class="filter-price_selection">
-                                <div class="filter-scale"></div>
-                                <div class="filter-min"></div>
-                                <div class="filter-max"></div>
+                                <div class="filter-controls">
+                                    <div class="filter-scale">
+                                        <div class="filter-scale-bar"></div>
+                                    </div>
+
+                                    <div class="filter-toggle filter-toggle-min"></div>
+                                    <div class="filter-toggle filter-toggle-max"></div>
+                                </div>
                                 <div class="filter-price_input clearfix">
                                     <input class="filter-price-min" type="text" value="0">
-                                    <span>&#8211;</span>
+                                    <span class="filter-minus-sign">&#8212;</span>
                                     <input class="filter-price-max" type="text" value="30000">
                                 </div>
                             </div>
@@ -294,6 +299,14 @@
             </div>
         </div>
     </footer>
+    <div class="cart-notification">
+        <a href="#" class="cart-notification-close"></a>
+        <p class="cart-notification-title">Товар добавлен в корзину!</p>
+        <div class="cart-notification-decision">
+            <a class="cart-order-btn">Оформить заказ</a>
+            <a href="#" class="cart-cancel-btn">Продолжить покупки</a>
+        </div>
+    </div>
 </body>
 
 </html>
