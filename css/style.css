@@ -1002,18 +1002,39 @@ input[type="checkbox"]:disabled+label::before {
     display: inline-block;
     vertical-align: top;
     float: left;
-    width: 113px;
-    margin-right: 8px;
 }
 
 .catalog-sorting a {
     text-decoration: none;
 }
 
+.sorting-type {
+    display: block;
+    float: left;
+    width: 400px;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.sorting-type li:nth-child(2) {
+    margin-left: 4px;
+}
+
+.sorting-type li:nth-child(3) {
+    margin-left: 3px;
+}
+
+.sorting-arrow {
+    display: block;
+    float: right;
+    width:60px;
+    margin: 0;
+}
+
 .arrow-up:after {
     position: absolute;
     top: 5px;
-    left: 110px;
+    left: 27px;
     width: 11px;
     height: 10px;
     background: -930px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1023,7 +1044,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-up:hover:after {
     position: absolute;
     top: 5px;
-    left: 110px;
+    left: 27px;
     width: 11px;
     height: 10px;
     background: -972px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1033,7 +1054,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-up:active:after {
     position: absolute;
     top: 5px;
-    left: 110px;
+    left: 27px;
     width: 11px;
     height: 10px;
     background: -951px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1043,7 +1064,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-up-active:after {
     position: absolute;
     top: 5px;
-    left: 110px;
+    left: 27px;
     width: 11px;
     height: 10px;
     background: -951px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1053,7 +1074,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-down:after {
     position: absolute;
     top: 5px;
-    left: 140px;
+    left: -7px;
     width: 11px;
     height: 10px;
     background: -578px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1063,7 +1084,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-down:hover:after {
     position: absolute;
     top: 5px;
-    left: 140px;
+    left: -7px;
     width: 11px;
     height: 10px;
     background: -618px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1073,7 +1094,7 @@ input[type="checkbox"]:disabled+label::before {
 .arrow-down:active:after {
     position: absolute;
     top: 5px;
-    left: 140px;
+    left: -6px;
     width: 11px;
     height: 10px;
     background: -599px -5px url("../img/icons/sprite-icon.png") no-repeat;
@@ -1647,10 +1668,13 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .popular {
+    display: inline-block;
+    vertical-align: baseline;
     background-color: #f7f3ec;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 0px;
     margin-bottom: 20px;
-    padding: 30px 25px 60px 30px;
+    padding: 30px 25px 23px 30px;;
 }
 
 .popular-title {

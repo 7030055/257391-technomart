@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -127,12 +127,16 @@
                 <section class="catalog-goods">
                     <div class="catalog-sorting-filter clearfix">
                         <span>Сортировка:</span>
-                        <div class="catalog-sorting">
-                            <a href="#" class="sorting-option sorting-option-active sorting-option-price">По цене</a>
-                            <a href="#" class="sorting-option sorting-option-type">По типу</a>
-                            <a href="#" class="sorting-option sorting-option-function">По функционалу</a>
-                            <a class="arrow-up arrow-up-active" href="#"></a>
-                            <a class="arrow-down" href="#"></a>
+                        <div class="catalog-sorting clearfix">
+                            <ul class="sorting-type">
+                                <li><a href="#" class="sorting-option sorting-option-active sorting-option-price">По цене</a></li>
+                                <li><a href="#" class="sorting-option sorting-option-type">По типу</a></li>
+                                <li><a href="#" class="sorting-option sorting-option-function">По функционалу</a></li>
+                            </ul>
+                            <ul class="sorting-arrow">
+                                <li><a class="arrow-up arrow-up-active" href="#"></a></li>
+                                <li><a class="arrow-down" href="#"></a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="goods clearfix">
